@@ -1,11 +1,19 @@
-body
+html
 {
-  display : flex;
+
 }
 
-.heeader
+body
 {
-  height : 100px;
+  background-color : white;
+  display : flex;
+  justify-content : center;
+  align-items : flex-start;
+}
+
+.header
+{
+  background-color : #3F51B5;
   width : 100px;
-  background-color : red;
+  height : 100px;
 }
