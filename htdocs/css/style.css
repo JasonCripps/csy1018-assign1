@@ -2,9 +2,16 @@
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 Chris Coyier (2016)
 Full reference in README*/
+
+/* Colours used (Hex values) are from Google material colour pallette
+Google (2017)
+https://material.io/guidelines/style/color.html#
+Full reference in  README */
+
 html
 {
   font-family: 'Slabo 27px', serif; /*From google web fonts*/
+  /*set a background colour*/
   background-color : white;
   display : flex;
   justify-content : center;
@@ -14,6 +21,7 @@ html
 
 header
 {
+  /*set a background colour*/
   background-color : #263238;
   width : 100%;
   height : 5em;
@@ -24,6 +32,7 @@ header
 
 nav
 {
+  /*set a background colour*/
   background-color : #37474F;
   width : 100%;
   height : 3em;
@@ -34,12 +43,14 @@ nav
 
 body
 {
+  /*set a background colour*/
   background-color : black;
   height : 100%;
 }
 
 footer
 {
+  /*set a background colour*/
   background-color : #263238;
   width : 100%;
   height : 5%;
@@ -63,7 +74,9 @@ Full reference in README
 
 a
 {
+  /*set text colour*/
   color : inherit;
+  /*remove any hyperlink effects e.g undeline */
   text-decoration : none;
 }
 
@@ -73,6 +86,7 @@ a
   display : flex;
   justify-content : center;
   align-items : center;
+  /*set text colour*/
   color : #ECEFF1;
   font-size : 1em;
 }
@@ -83,25 +97,43 @@ a
   justify-content : center;
   align-items : center;
   height : 3em;
+  /*set text colour*/
   color : #ECEFF1;
+  /*set a size for the font */
   font-size : 1.2em;
 }
 
 .image-area
 {
-  background-color : black;
+  /*set the size of the area the image will be displayed*/
   width : 100%;
   height : 25em;
 }
 
+.profile-image-area
+{
+  /*set the size of the area the image will be displayed*/
+  width : 10em;
+  height : 13em;
+}
+
+.profile-image
+{
+  /*set width and height of the image (within the image area) (fill 100%) */
+  width : 100%;
+  height : 100%;
+}
+
 .main-image
 {
+  /*set width and height of the image (within the image area) (fill 100%) */
   width : 100%;
   height : 100%;
 }
 
 .content-area
 {
+  /*set a background colour*/
   background-color : #ECEFF1;
   width : 100%;
   height : 100%;
@@ -113,6 +145,7 @@ a
 
 .content-title
 {
+  /*set a size for the title contents font */
   font-size : 1.5em;
 }
 
@@ -125,6 +158,7 @@ a
 
 .content-block
 {
+  /*set a size for the standard content font */
   font-size : 1em;
   display : flex;
   flex-direction : column;
@@ -144,6 +178,7 @@ a
 }
 .footer-item
 {
+  /*set text colour*/
   color : #ECEFF1;
 }
 
@@ -175,6 +210,11 @@ Full reference in README */
     /*cfooter info is displayed in acolumn instead of a row*/
     flex-direction : column;
     /*change content height*/
+    height : 15em;
+  }
+  .image-area
+  {
+    /*reduce the height of the main image*/
     height : 15em;
   }
 }
