@@ -192,7 +192,7 @@ Full reference in README */
 {
   .content-split
   {
-    /*content is no longer split into two columns*/
+    /*content is no longer split into two columns (columns merge together)*/
     flex-direction : column;
   }
 }
