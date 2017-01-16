@@ -6,8 +6,66 @@
     <title>
       Jason Cripps - Contact
     </title>
-    <meta charset="utf-8">
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" href = "css/style.css">
+    <!-- font style from google web fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
   </head>
+
+  <header>
+    <div class = "header-text">
+      <h1> Site Name </h1>
+    </div>
+  </header>
+
+  <nav>
+    <div class = "nav-button">
+      <!-- code to link bak to root directory credit Stackoverflow user
+      Alvaro Gonzales (2011)
+      http://stackoverflow.com/questions/4862231/links-not-going-back-a-directory
+      Full reference in README -->
+      <a href = "../index.html"> Home </a>
+    </div>
+    <div class = "nav-button">
+      <a href = "bio.html"> About </a>
+    </div>
+    <div class = "nav-button">
+      <a href = "cv.html"> CV </a>
+    </div>
+    <div class = "nav-button">
+      <a href = "contact.html"> Contact </a>
+    </div>
+  </nav>
+
   <body>
+    <div class = "image-area">
+      <img src = "images/main-image-1.jpg" alt = "main image" class = "main-image">
+    </div>
+    <div class = "content-area">
+      <div class = "content-title">
+        <h2> Contact me </h2>
+      </div>
+      <!-- code for forms written in reference to w3Schools HTML Forms section of website
+      w3schools (2017)
+      http://www.w3schools.com/html/html_forms.asp
+      Full reference in README -->
+      <form>
+          <p> Name : </p>
+          <input type  = "text" value = "Enter your name">
+          <p> Email address : </p>
+          <input type = "text" value = "Enter an email address">
+          <p> Message </p>
+          <input type = "Text" value = "What would you like to say?">
+          <br>
+          <input type = "submit" value = "Send">
+          <br>
+      </form>
+    </div>
   </body>
+
+  <footer>
+    <div class = "footer-button">
+      <h2>  </h2>
+    </div>
+  </footer>
 </html>

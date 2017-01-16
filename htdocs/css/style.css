@@ -45,6 +45,13 @@ footer
   height : 5%;
 }
 
+form
+{
+  display : flex;
+  flex-direction : column;
+  text-align : center;
+}
+
 /* code to remove link styling from Stackoverflow forum user
 Frxstrem (2012)
 http://stackoverflow.com/questions/8919682/remove-all-styling-formatting-from-hyperlinks
