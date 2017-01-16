@@ -16,7 +16,7 @@ header
 {
   background-color : #263238;
   width : 100%;
-  height : 5%;
+  height : 5em;
   display : flex;
   justify-content : center;
   align-items : center;
@@ -145,4 +145,36 @@ a
 .footer-item
 {
   color : #ECEFF1;
+}
+
+/* Media query code created with aid of w3schools.com - CSS3 @Media Rule
+http://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+w3schools (2017)
+Full reference in README */
+
+/*if screen width is less than 1100px */
+@media screen and (max-width : 1100px)
+{
+  .content-split
+  {
+    /*content is no longer split into two columns*/
+    flex-direction : column;
+  }
+}
+
+/*if screen width is less than 400px */
+@media screen and (max-width : 600px)
+{
+  footer
+  {
+    /*cfooter info is displayed in acolumn instead of a row*/
+    flex-direction : column;
+  }
+  nav
+  {
+    /*cfooter info is displayed in acolumn instead of a row*/
+    flex-direction : column;
+    /*change content height*/
+    height : 15em;
+  }
 }
